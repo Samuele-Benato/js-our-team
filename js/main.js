@@ -37,7 +37,7 @@ const team = document.getElementById("team");
 
 for (const attribute of ourTeam) {
   team.innerHTML += ` 
-  <div class="card w-25">
+  <div class="card card_team">
     <img src="img/${attribute.photo}" class="card-img-top" alt="foto membro team" />
     <div class="card-body">
     <h5 class="card-title">${attribute.name}</h5>
