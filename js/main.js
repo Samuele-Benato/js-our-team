@@ -33,6 +33,10 @@ const ourTeam = [
   },
 ];
 
+const team = document.getElementById("team");
+
 for (const attribute of ourTeam) {
-  console.log(attribute);
+  team.innerHTML += ` ${attribute.name} <br/>
+  ${attribute.role}<br/>
+  ${attribute.photo}<br/>`;
 }
