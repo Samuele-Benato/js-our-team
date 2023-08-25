@@ -35,13 +35,14 @@ const ourTeam = [
 
 const team = document.getElementById("team");
 
-for (const attribute of ourTeam) {
+for (const member of ourTeam) {
+  console.log(member);
   team.innerHTML += ` 
   <div class="card card_team">
-    <img src="img/${attribute.photo}" class="card-img-top" alt="foto membro team" />
+    <img src="img/${member.photo}" class="card-img-top" alt="foto membro team" />
     <div class="card-body">
-    <h5 class="card-title">${attribute.name}</h5>
-    <p class="card-text">${attribute.role}</p>
+    <h5 class="card-title">${member.name}</h5>
+    <p class="card-text">${member.role}</p>
     </div>
   </div>`;
 }
